@@ -1,0 +1,118 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to Mateusz Woźniak's documentation platform.
+---
+
+## Recent Updates
+
+Stay informed about all changes to the Mateusz Woźniak documentation platform. You receive new features, performance improvements, and bug fixes with each release. Check the tags to quickly identify the type of changes.
+
+<Update label="2024-10-20" description="v2.0.0" tags={["feature", "breaking"]}>
+
+## Breaking Changes
+
+- Removed legacy YAML frontmatter validation in favor of stricter MDX parsing rules.
+
+## New Features
+
+- Added support for dynamic brand colors, including `#3B82F6` as the default blue theme.
+- Introduced `<Video>` and `<Iframe>` components for richer media embeds.
+- Enhanced Mermaid diagram rendering with better error handling for complex graphs.
+
+## Improvements
+
+- Optimized page load times by `{20%}` through lazy-loading of JSX components.
+- Improved accessibility with automatic alt text generation for `<Image>` components.
+
+</Update>
+
+<Update label="2024-10-05" description="v1.9.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- New `<ParamField>` and `<ResponseField>` components for API documentation.
+- Added `tags` prop to `<Update>` components for better categorization.
+
+## Bug Fixes
+
+- Fixed parsing errors caused by unescaped `{` and `}` in prose text.
+- Resolved nested code block rendering issues—now uses 4 backticks correctly inside JSX.
+- Corrected heading hierarchy enforcement to prevent H1 usage in body content.
+
+</Update>
+
+<Update label="2024-09-15" description="v1.8.0" tags={["improvement", "bugfix"]}>
+
+## Improvements
+
+- Updated all components to enforce double-quoted string attributes.
+- Enhanced `<Steps>` and `<Tabs>` with better icon support from Lucide library.
+
+## Bug Fixes
+
+- Patched self-closing tag issues for container components like `<Callout>`.
+- Fixed Mermaid code block syntax to prevent `<Mermaid>` component misuse.
+
+</Update>
+
+## Upcoming Changes
+
+Preview what's coming next to help you plan integrations and updates.
+
+<Expandable title="v2.1.0 Preview (Expected 2024-11-01)" default-open="false">
+
+- Real-time collaboration editing for documentation pages.
+- AI-powered component suggestions based on content analysis.
+- Native support for dark mode toggles with brand color `#3B82F6`.
+
+<Callout kind="tip">
+  Provide feedback on these features via the [GitHub repository](https://github.com/example/mateusz-wozniak-docs).
+</Callout>
+
+</Expandable>
+
+## Quick Navigation
+
+<Columns cols={3}>
+  <Card title="Introduction" icon="book-open" href="/introduction">
+    Get started with the platform overview.
+  </Card>
+  <Card title="Quickstart" icon="rocket" href="/quickstart">
+    Set up your first documentation site.
+  </Card>
+  <Card title="Customization" icon="settings" href="/configuration">
+    Learn advanced configuration options.
+  </Card>
+</Columns>
+
+## Stay Updated
+
+Follow these steps to ensure you always have the latest version.
+
+<Steps>
+  <Step title="Check for Updates" icon="refresh-cw">
+
+    Monitor the changelog regularly or subscribe to release notifications.
+
+  </Step>
+  <Step title="Migrate Code" icon="code">
+
+    Review breaking changes and update your MDX files.
+
+````mdx
+<Update label="2024-10-20" description="v2.0.0" tags={["feature"]}>
+  Updated content here.
+</Update>
+````
+
+  </Step>
+  <Step title="Test Locally" icon="play">
+
+    Run your site with the new version and validate parsing.
+
+  </Step>
+</Steps>
+
+<Callout kind="info">
+  For migration scripts or detailed release notes, visit the [full release history](https://github.com/example/mateusz-wozniak-docs/releases).
+</Callout>

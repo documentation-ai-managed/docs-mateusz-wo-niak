@@ -1,0 +1,108 @@
+---
+title: Introduction to Mateusz Woźniak's Documentation Space
+description: Discover Mateusz Woźniak's default documentation platform, designed for organizing and managing project documentation efficiently.
+---
+
+## Overview
+
+Welcome to Mateusz Woźniak's Documentation Space. You use this platform to organize, manage, and share all your project documentation in one centralized location. It supports MDX for rich, interactive pages with components like cards, steps, and tabs, making your docs engaging and easy to navigate.
+
+<Callout kind="info">
+This space serves as your default hub. Customize it with your brand color `{ #3B82F6 }` for a professional look.
+</Callout>
+
+## Key Benefits
+
+You gain several advantages from this documentation platform:
+
+<Columns cols={3}>
+  <Card title="Centralized Management" icon="database" href="#centralized-management">
+    Keep all project docs in one place. Search, version, and collaborate effortlessly.
+  </Card>
+  <Card title="Rich MDX Components" icon="code" href="#components">
+    Build interactive pages with tabs, steps, and code examples for better user experience.
+  </Card>
+  <Card title="Custom Branding" icon="palette" href="#branding">
+    Apply your brand color `{ #3B82F6 }` and styles to match your identity.
+  </Card>
+</Columns>
+
+## Quick Navigation Guide
+
+Start exploring right away with these steps. You set up your first document in minutes.
+
+<Steps>
+  <Step title="Create Your First Page" icon="file-plus">
+    Navigate to the dashboard and click "New Page". Choose MDX format for components.
+  </Step>
+  <Step title="Add Components" icon="puzzle">
+    Use frontmatter for titles, then add `<Callout>` or `<Steps>` for structure.
+  </Step>
+  <Step title="Publish and Share" icon="share-2">
+    Save and generate a shareable link. Embed in your site or apps.
+  </Step>
+</Steps>
+
+<Tabs>
+  <Tab title="Markdown Basics" icon="edit-3">
+    Write standard markdown for text.
+
+````markdown
+## Heading
+
+- List item
+- Another item
+````
+  </Tab>
+  <Tab title="MDX Components" icon="layers">
+    Enhance with JSX components.
+
+````jsx
+<Callout kind="tip">
+  Pro tip here.
+</Callout>
+````
+  </Tab>
+</Tabs>
+
+## Brand Guidelines
+
+Follow these guidelines to maintain consistency across your docs.
+
+<Expandable title="Primary Color Usage" default-open="true">
+Use `{ #3B82F6 }` as your primary brand color for buttons, links, and accents. It represents trust and professionalism.
+
+Example CSS integration:
+
+````css
+:root {
+  --brand-primary: #3B82F6;
+}
+
+.button {
+  background-color: var(--brand-primary);
+  color: white;
+}
+````
+</Expandable>
+
+<Expandable title="Typography and Icons">
+Stick to sans-serif fonts like Inter. Use Lucide icons such as `book-open` for docs sections.
+</Expandable>
+
+## Next Steps
+
+You now understand the basics. Dive deeper with these resources:
+
+<Columns cols={2}>
+  <Card title="Quickstart Guide" icon="zap" href="/quickstart">
+    Set up advanced features in 5 minutes.
+  </Card>
+  <Card title="Customization" icon="settings" href="/configuration">
+    Tailor themes and layouts.
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+Ready to build? Create your first MDX page and experiment with components. Link to pages like `/authentication` or `/changelog` for full workflows.
+</Callout>
